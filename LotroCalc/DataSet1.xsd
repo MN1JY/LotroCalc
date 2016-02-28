@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRecipe" msprop:Generator_TableClassName="dtRecipeDataTable" msprop:Generator_TableVarName="tabledtRecipe" msprop:Generator_TablePropName="dtRecipe" msprop:Generator_RowDeletingName="dtRecipeRowDeleting" msprop:Generator_UserTableName="dtRecipe" msprop:Generator_RowChangingName="dtRecipeRowChanging" msprop:Generator_RowEvHandlerName="dtRecipeRowChangeEventHandler" msprop:Generator_RowDeletedName="dtRecipeRowDeleted" msprop:Generator_RowEvArgName="dtRecipeRowChangeEvent" msprop:Generator_RowChangedName="dtRecipeRowChanged" msprop:Generator_RowClassName="dtRecipeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecipeName" msprop:Generator_ColumnVarNameInTable="columnRecipeName" msprop:Generator_ColumnPropNameInRow="RecipeName" msprop:Generator_ColumnPropNameInTable="RecipeNameColumn" msprop:Generator_UserColumnName="RecipeName" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="Profession" msprop:Generator_ColumnVarNameInTable="columnProfession" msprop:Generator_ColumnPropNameInRow="Profession" msprop:Generator_ColumnPropNameInTable="ProfessionColumn" msprop:Generator_UserColumnName="Profession" type="xs:string" minOccurs="0" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+              <xs:element name="Facility" msprop:Generator_ColumnVarNameInTable="columnFacility" msprop:Generator_ColumnPropNameInRow="Facility" msprop:Generator_ColumnPropNameInTable="FacilityColumn" msprop:Generator_UserColumnName="Facility" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtIngSupplier" msprop:Generator_TableClassName="dtIngSupplierDataTable" msprop:Generator_TableVarName="tabledtIngSupplier" msprop:Generator_TablePropName="dtIngSupplier" msprop:Generator_RowDeletingName="dtIngSupplierRowDeleting" msprop:Generator_UserTableName="dtIngSupplier" msprop:Generator_RowChangingName="dtIngSupplierRowChanging" msprop:Generator_RowEvHandlerName="dtIngSupplierRowChangeEventHandler" msprop:Generator_RowDeletedName="dtIngSupplierRowDeleted" msprop:Generator_RowEvArgName="dtIngSupplierRowChangeEvent" msprop:Generator_RowChangedName="dtIngSupplierRowChanged" msprop:Generator_RowClassName="dtIngSupplierRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IngredientName" msdata:Caption="RecipeName" msprop:Generator_ColumnVarNameInTable="columnIngredientName" msprop:Generator_ColumnPropNameInRow="IngredientName" msprop:Generator_ColumnPropNameInTable="IngredientNameColumn" msprop:Generator_UserColumnName="IngredientName" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="SupplierType" msprop:Generator_ColumnVarNameInTable="columnSupplierType" msprop:Generator_ColumnPropNameInRow="SupplierType" msprop:Generator_ColumnPropNameInTable="SupplierTypeColumn" msprop:Generator_UserColumnName="SupplierType" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtIngCrafted" msprop:Generator_TableClassName="dtIngCraftedDataTable" msprop:Generator_TableVarName="tabledtIngCrafted" msprop:Generator_TablePropName="dtIngCrafted" msprop:Generator_RowDeletingName="dtIngCraftedRowDeleting" msprop:Generator_UserTableName="dtIngCrafted" msprop:Generator_RowChangingName="dtIngCraftedRowChanging" msprop:Generator_RowEvHandlerName="dtIngCraftedRowChangeEventHandler" msprop:Generator_RowDeletedName="dtIngCraftedRowDeleted" msprop:Generator_RowEvArgName="dtIngCraftedRowChangeEvent" msprop:Generator_RowChangedName="dtIngCraftedRowChanged" msprop:Generator_RowClassName="dtIngCraftedRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IngredientName" msdata:Caption="RecipeName" msprop:Generator_ColumnVarNameInTable="columnIngredientName" msprop:Generator_ColumnPropNameInRow="IngredientName" msprop:Generator_ColumnPropNameInTable="IngredientNameColumn" msprop:Generator_UserColumnName="IngredientName" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="Profession" msprop:Generator_ColumnVarNameInTable="columnProfession" msprop:Generator_ColumnPropNameInRow="Profession" msprop:Generator_ColumnPropNameInTable="ProfessionColumn" msprop:Generator_UserColumnName="Profession" type="xs:string" minOccurs="0" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+              <xs:element name="Facility" msprop:Generator_ColumnVarNameInTable="columnFacility" msprop:Generator_ColumnPropNameInRow="Facility" msprop:Generator_ColumnPropNameInTable="FacilityColumn" msprop:Generator_UserColumnName="Facility" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtIngGathered" msprop:Generator_TableClassName="dtIngGatheredDataTable" msprop:Generator_TableVarName="tabledtIngGathered" msprop:Generator_TablePropName="dtIngGathered" msprop:Generator_RowDeletingName="dtIngGatheredRowDeleting" msprop:Generator_UserTableName="dtIngGathered" msprop:Generator_RowChangingName="dtIngGatheredRowChanging" msprop:Generator_RowEvHandlerName="dtIngGatheredRowChangeEventHandler" msprop:Generator_RowDeletedName="dtIngGatheredRowDeleted" msprop:Generator_RowEvArgName="dtIngGatheredRowChangeEvent" msprop:Generator_RowChangedName="dtIngGatheredRowChanged" msprop:Generator_RowClassName="dtIngGatheredRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IngredientName" msdata:Caption="RecipeName" msprop:Generator_ColumnVarNameInTable="columnIngredientName" msprop:Generator_ColumnPropNameInRow="IngredientName" msprop:Generator_ColumnPropNameInTable="IngredientNameColumn" msprop:Generator_UserColumnName="IngredientName" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="Profession" msprop:Generator_ColumnVarNameInTable="columnProfession" msprop:Generator_ColumnPropNameInRow="Profession" msprop:Generator_ColumnPropNameInTable="ProfessionColumn" msprop:Generator_UserColumnName="Profession" type="xs:string" minOccurs="0" />
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSupplierTotal" msprop:Generator_TableClassName="dtSupplierTotalDataTable" msprop:Generator_TableVarName="tabledtSupplierTotal" msprop:Generator_TablePropName="dtSupplierTotal" msprop:Generator_RowDeletingName="dtSupplierTotalRowDeleting" msprop:Generator_UserTableName="dtSupplierTotal" msprop:Generator_RowChangingName="dtSupplierTotalRowChanging" msprop:Generator_RowEvHandlerName="dtSupplierTotalRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSupplierTotalRowDeleted" msprop:Generator_RowEvArgName="dtSupplierTotalRowChangeEvent" msprop:Generator_RowChangedName="dtSupplierTotalRowChanged" msprop:Generator_RowClassName="dtSupplierTotalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalCost" msprop:Generator_ColumnVarNameInTable="columnTotalCost" msprop:Generator_ColumnPropNameInRow="TotalCost" msprop:Generator_ColumnPropNameInTable="TotalCostColumn" msprop:Generator_UserColumnName="TotalCost" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCraftingXP" msprop:Generator_TableClassName="dtCraftingXPDataTable" msprop:Generator_TableVarName="tabledtCraftingXP" msprop:Generator_TablePropName="dtCraftingXP" msprop:Generator_RowDeletingName="dtCraftingXPRowDeleting" msprop:Generator_UserTableName="dtCraftingXP" msprop:Generator_RowChangingName="dtCraftingXPRowChanging" msprop:Generator_RowEvHandlerName="dtCraftingXPRowChangeEventHandler" msprop:Generator_RowDeletedName="dtCraftingXPRowDeleted" msprop:Generator_RowEvArgName="dtCraftingXPRowChangeEvent" msprop:Generator_RowChangedName="dtCraftingXPRowChanged" msprop:Generator_RowClassName="dtCraftingXPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tier" msprop:Generator_ColumnVarNameInTable="columnTier" msprop:Generator_ColumnPropNameInRow="Tier" msprop:Generator_ColumnPropNameInTable="TierColumn" msprop:Generator_UserColumnName="Tier" type="xs:string" minOccurs="0" />
+              <xs:element name="Cook" msprop:Generator_ColumnVarNameInTable="columnCook" msprop:Generator_ColumnPropNameInRow="Cook" msprop:Generator_ColumnPropNameInTable="CookColumn" msprop:Generator_UserColumnName="Cook" type="xs:int" minOccurs="0" />
+              <xs:element name="Forester" msprop:Generator_ColumnVarNameInTable="columnForester" msprop:Generator_ColumnPropNameInRow="Forester" msprop:Generator_ColumnPropNameInTable="ForesterColumn" msprop:Generator_UserColumnName="Forester" type="xs:int" minOccurs="0" />
+              <xs:element name="Jeweler" msprop:Generator_ColumnVarNameInTable="columnJeweler" msprop:Generator_ColumnPropNameInRow="Jeweler" msprop:Generator_ColumnPropNameInTable="JewelerColumn" msprop:Generator_UserColumnName="Jeweler" type="xs:int" minOccurs="0" />
+              <xs:element name="Metalsmith" msprop:Generator_ColumnVarNameInTable="columnMetalsmith" msprop:Generator_ColumnPropNameInRow="Metalsmith" msprop:Generator_ColumnPropNameInTable="MetalsmithColumn" msprop:Generator_UserColumnName="Metalsmith" type="xs:int" minOccurs="0" />
+              <xs:element name="Prospector" msprop:Generator_ColumnVarNameInTable="columnProspector" msprop:Generator_ColumnPropNameInRow="Prospector" msprop:Generator_ColumnPropNameInTable="ProspectorColumn" msprop:Generator_UserColumnName="Prospector" type="xs:int" minOccurs="0" />
+              <xs:element name="Scholar" msprop:Generator_ColumnVarNameInTable="columnScholar" msprop:Generator_ColumnPropNameInRow="Scholar" msprop:Generator_ColumnPropNameInTable="ScholarColumn" msprop:Generator_UserColumnName="Scholar" type="xs:int" minOccurs="0" />
+              <xs:element name="Tailor" msprop:Generator_ColumnVarNameInTable="columnTailor" msprop:Generator_ColumnPropNameInRow="Tailor" msprop:Generator_ColumnPropNameInTable="TailorColumn" msprop:Generator_UserColumnName="Tailor" type="xs:int" minOccurs="0" />
+              <xs:element name="Weaponsmith" msprop:Generator_ColumnVarNameInTable="columnWeaponsmith" msprop:Generator_ColumnPropNameInRow="Weaponsmith" msprop:Generator_ColumnPropNameInTable="WeaponsmithColumn" msprop:Generator_UserColumnName="Weaponsmith" type="xs:int" minOccurs="0" />
+              <xs:element name="Woodworker" msprop:Generator_ColumnVarNameInTable="columnWoodworker" msprop:Generator_ColumnPropNameInRow="Woodworker" msprop:Generator_ColumnPropNameInTable="WoodworkerColumn" msprop:Generator_UserColumnName="Woodworker" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

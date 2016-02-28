@@ -1,0 +1,65 @@
+﻿using System.Collections.Generic;
+using LotroCalc.RecipeData.Ingredients.CompositeIngredients.Cook._1_Apprentice;
+using LotroCalc.RecipeData.Ingredients.CompositeIngredients.Cook._3_Expert;
+using LotroCalc.RecipeData.Ingredients.CompositeIngredients.Cook._4_Artisan;
+using LotroCalc.RecipeData.Ingredients.SimpleIngredients;
+using LotroCalc.RecipeData.Ingredients.SimpleIngredients.GatheringProfessions;
+using LotroCalc.RecipeData.Ingredients.SimpleIngredients.Purchased;
+using LotroCalc.RecipeData.Ingredients.CompositeIngredients;
+
+namespace LotroCalc.RecipeData.Ingredients.CompositeIngredients.Cook._6_Supreme
+{
+    public class FeastOfEthuilwereth : SupremeIngredients
+    {
+        public static string DisplayName = "Feast Of Ethuilwereth (Relic)";
+
+        public FeastOfEthuilwereth(int count)
+        {
+            Name = DisplayName;
+            QuantityRequested = count;
+            QuantityProduced = 1;
+            CraftingExperience = 10;
+            SuperiorOvenRequired = true;
+            IsUserRecipe = true;
+        }
+
+        public override object Clone()
+        {
+            return new FeastOfEthuilwereth(QuantityRequested);
+        }
+
+        public override SortedDictionary<string, Ingredient> GetRecipeIngredients()
+        {
+            var recipe = new SortedDictionary<string, Ingredient>();
+            Ingredient ing;
+            string ingName;
+
+            ingName = JarOfBlackberryJam.DisplayName;
+            ing = (Ingredient)DictCraftedIngredients[ingName].Clone();
+            ing.QuantityRequested = 1 * QuantityRequested;
+            recipe.Add(ingName, ing);
+
+            ingName = BallOfDough.DisplayName;
+            ing = (Ingredient)DictCraftedIngredients[ingName].Clone();
+            ing.QuantityRequested = 1 * QuantityRequested;
+            recipe.Add(ingName, ing);
+
+            ingName = PieCrust.DisplayName;
+            ing = (Ingredient)DictCraftedIngredients[ingName].Clone();
+            ing.QuantityRequested = 1 * QuantityRequested;
+            recipe.Add(ingName, ing);
+
+            ingName = ApplePieFilling.DisplayName;
+            ing = (Ingredient)DictCraftedIngredients[ingName].Clone();
+            ing.QuantityRequested = 1 * QuantityRequested;
+            recipe.Add(ingName, ing);
+
+            ingName = Honeybrew.DisplayName;
+            ing = (Ingredient)DictCraftedIngredients[ingName].Clone();
+            ing.QuantityRequested = 1 * QuantityRequested;
+            recipe.Add(ingName, ing);
+
+            return recipe;
+        }
+    }
+}

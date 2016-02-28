@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LotroCalc.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Lord Of The Rings Online (LOTRO) Crafting Calculator</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="Lord Of The Rings Online (LOTRO) Crafting Calculator" />
+    <meta name="keywords" content="Lord Of The Rings Online, Crafting, Calculator, Guide, Free, LOTRO, Crafting Calculator, Recipes, Ingredients, Cook, Jeweler, Metalsmith, Scholor, Tailor, Weaponsmith, Woodworker, MMO, Gaming, RPG, Role Playing" />
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+</head>
+<body> 
+    <form runat="server" style="height: 100%">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <h1 style="padding-bottom: 0px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px;">
+                        Crafting Calculator for <i>Lord of the Rings Online</i>
+                    </h1>
+
+                </div>
+
+                <div class="clear hideSkiplink">
+                    <asp:Menu ID="NavigationMenu" runat="server" EnableViewState="false" 
+                        IncludeStyleBlock="false" Orientation="Horizontal" CssClass="menu">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="http://www.craftingcalc.com" Text="Home" />
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="1. Professions" Selected="True" />
+                            <asp:MenuItem NavigateUrl="~/Recipes.aspx" Text="2. Recipes"/>
+                            <asp:MenuItem NavigateUrl="~/Ingredients.aspx" Text="3. Ingredients"/>
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+            <div class="main">
+                <table style="width: 99%; height: 600px;" align="center" cellpadding="0" 
+                    cellspacing="0">
+                    <tr style="height: 100%;">
+                        <td style="border-style: inset; height: 100%; vertical-align: top; height: 600px;" 
+                            align="center">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <h6 style="color: black; padding-top: 0px; margin-top: 0px; margin-left: 25px; font-variant:normal;">
+                <i>"Lord of the Rings Online" and all associated intellectual property are owned by Turbine, Inc. and Warner Bros.</i>
+                <br />
+                <b>Find any errors or missing recipes?  <a href="RecipeEditor.aspx"><i>Click here to help</i></a></b>
+            </h6>
+        </div>
+    </form>
+</body>
+</html>

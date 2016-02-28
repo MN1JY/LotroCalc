@@ -1,0 +1,55 @@
+﻿using System;
+using LotroCalc.RecipeData.Ingredients;
+
+namespace LotroCalc
+{
+    public class Global : System.Web.HttpApplication
+    {
+
+        void Application_Start(object sender, EventArgs e)
+        {
+            Application.Add("Recipes", Ingredient.GetUserRecipes());
+            Application.Add("Ingredients", Ingredient.GetIngredients());
+        }
+
+        void Application_End(object sender, EventArgs e)
+        {
+            //  Code that runs on application shutdown
+
+        }
+
+        void Application_Error(object sender, EventArgs e)
+        {
+            //// Code that runs when an unhandled error occurs
+            //if (System.Web.HttpContext.Current != null)
+            //{
+            //    System.Web.HttpContext ctx = System.Web.HttpContext.Current;
+
+            //    if (ctx.Request.FilePath.Contains("favicon.ico"))
+            //    {
+            //        ctx.ClearError();
+            //        return;
+            //    }
+
+            //    ctx.ClearError();
+            //    ctx.Response.Redirect("~/default.aspx");
+            //}
+        }
+
+        void Session_Start(object sender, EventArgs e)
+        {
+            // Code that runs when a new session is started
+
+        }
+
+        void Session_End(object sender, EventArgs e)
+        {
+            // Code that runs when a session ends. 
+            // Note: The Session_End event is raised only when the sessionstate mode
+            // is set to InProc in the Web.config file. If session mode is set to StateServer 
+            // or SQLServer, the event is not raised.
+
+        }
+
+    }
+}
